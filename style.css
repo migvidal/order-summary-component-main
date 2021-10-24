@@ -106,6 +106,10 @@ button:hover {
   body {
     background: url("images/pattern-background-mobile.svg") repeat-x, #f5f7ff;
   }
+
+  #lightbox {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
