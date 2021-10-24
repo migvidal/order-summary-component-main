@@ -34,7 +34,7 @@ footer {
   max-height: 600px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 5px 10px gray;
+  box-shadow: 0 29px 80px -40px #7280a7;
   background-color: #fff;
 }
 #lightbox .content {
