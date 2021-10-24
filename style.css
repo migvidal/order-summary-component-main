@@ -83,6 +83,7 @@ button:hover {
 .small-card {
   padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #f5f7ff;
   border-radius: 10px;
@@ -99,6 +100,7 @@ button:hover {
 }
 .small-card a {
   flex: 2;
+  text-align: right;
 }
 
 /* media queries */
