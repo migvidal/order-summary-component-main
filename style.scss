@@ -48,7 +48,7 @@ footer {
 
 // lightbox
 #lightbox {
-  margin: 10rem auto;
+  margin: 0 auto;
   max-width: 400px;
   max-height: 600px;
   border-radius: $border-radius-m;
@@ -127,8 +127,5 @@ button {
   body {
     background: url("images/pattern-background-mobile.svg") repeat-x,
     $very-pale-blue;
-  }
-  #lightbox {
-    margin-top: 0;
   }
 }
