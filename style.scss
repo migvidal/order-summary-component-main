@@ -1,12 +1,123 @@
+/*
+** variables **
+*/
+
 //colors
 $pale-blue: hsl(225, 100%, 94%);
 $bright-blue: hsl(245, 75%, 52%);
 $very-pale-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
-$drk-blue: hsl(223, 47%, 23%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// border
+$border-radius-sm: 10px;
+$border-radius-m: 15px;
+
+/*
+** generic elements **
+*/
+
+// img
+img {
+  max-width: 100%;
+}
 
 // typography
 body {
-    font-style: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+  //margin-top: 10rem;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: url("images/pattern-background-desktop.svg") repeat-x,
+    $very-pale-blue;
+}
+// links
+a {
+  color: $bright-blue;
+  text-decoration: underline;
+}
+
+/*
+** layout **
+*/
+
+// footer
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+// lightbox
+#lightbox {
+  margin: 10rem auto;
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: $border-radius-m;
+  overflow: hidden;
+  box-shadow: 0 5px 10px gray;
+  background-color: #fff;
+  .content {
+    margin: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    //    align-items: center;
+    & > * {
+      text-align: center;
+    }
+  }
+}
+
+/*
+** elements **
+*/
+button {
+  display: block;
+  width: 100%;
+  border-radius: $border-radius-sm;
+  margin: 1em 0;
+  padding: 0.5rem;
+  border: none;
+  font-weight: bold;
+  &.primary {
+    background-color: $bright-blue;
+    color: white;
+    box-shadow: 0 6px 15px 3px $pale-blue;
+    transition: box-shadow 0.1s ease-in, transform 0.1s ease-in;
+    &:hover {
+      box-shadow: 0 10px 30px 10px $pale-blue;
+      transform: scale(1.03);
+    }
+  }
+  &.secondary {
+    background: none;
+    color: rgb(73, 73, 73);
+    &:hover {
+      color: $dark-blue;
+      text-decoration: underline;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.small-card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: $very-pale-blue;
+  border-radius: $border-radius-sm;
+  & > * {
+    flex: 10;
+    text-align: left;
+  }
+  img {
+    flex: 1;
+  }
+  .planinfo {
+    margin-left: 1rem;
+  }
+  a {
+    flex: 2;
+  }
 }

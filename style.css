@@ -1,6 +1,104 @@
+/*
+** variables **
+*/
+/*
+** generic elements **
+*/
+img {
+  max-width: 100%;
+}
+
 body {
-  font-style: 16px;
+  font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
+  background: url("images/pattern-background-desktop.svg") repeat-x, #f5f7ff;
+}
+
+a {
+  color: #3829e0;
+  text-decoration: underline;
+}
+
+/*
+** layout **
+*/
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+#lightbox {
+  margin: 10rem auto;
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px gray;
+  background-color: #fff;
+}
+#lightbox .content {
+  margin: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+#lightbox .content > * {
+  text-align: center;
+}
+
+/*
+** elements **
+*/
+button {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: 1em 0;
+  padding: 0.5rem;
+  border: none;
+  font-weight: bold;
+}
+button.primary {
+  background-color: #3829e0;
+  color: white;
+  box-shadow: 0 6px 15px 3px #e0e8ff;
+  transition: box-shadow 0.1s ease-in, transform 0.1s ease-in;
+}
+button.primary:hover {
+  box-shadow: 0 10px 30px 10px #e0e8ff;
+  transform: scale(1.03);
+}
+button.secondary {
+  background: none;
+  color: #494949;
+}
+button.secondary:hover {
+  color: #1f2f56;
+  text-decoration: underline;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.small-card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+}
+.small-card > * {
+  flex: 10;
+  text-align: left;
+}
+.small-card img {
+  flex: 1;
+}
+.small-card .planinfo {
+  margin-left: 1rem;
+}
+.small-card a {
+  flex: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
