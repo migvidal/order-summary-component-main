@@ -9,6 +9,7 @@ img {
 }
 
 body {
+  padding: 1.5rem;
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   background: url("images/pattern-background-desktop.svg") repeat-x, #f5f7ff;
@@ -23,9 +24,8 @@ a {
 ** layout **
 */
 footer {
-  position: fixed;
-  bottom: 0;
-  margin: 10px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #lightbox {
@@ -99,6 +99,13 @@ button:hover {
 }
 .small-card a {
   flex: 2;
+}
+
+/* media queries */
+@media only screen and (max-width: 375px) {
+  body {
+    background: url("images/pattern-background-mobile.svg") repeat-x, #f5f7ff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

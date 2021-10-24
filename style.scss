@@ -24,7 +24,7 @@ img {
 
 // typography
 body {
-  //margin-top: 10rem;
+  padding: 1.5rem; // ensure a minimum margin
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   background: url("images/pattern-background-desktop.svg") repeat-x,
@@ -42,9 +42,8 @@ a {
 
 // footer
 footer {
-  position: fixed;
-  bottom: 0;
-  margin: 10px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 // lightbox
@@ -119,5 +118,14 @@ button {
   }
   a {
     flex: 2;
+  }
+}
+
+
+/* media queries */
+@media only screen and (max-width: 375px) {
+  body {
+    background: url("images/pattern-background-mobile.svg") repeat-x,
+    $very-pale-blue;
   }
 }
